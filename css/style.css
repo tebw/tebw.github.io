@@ -47,13 +47,13 @@ body {
 }
 
 a {
-  color: #F14E95;
+  color: #944f5b;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
 }
 a:hover, a:active, a:focus {
-  color: #F14E95;
+  color: #944f5b;
   outline: none;
   text-decoration: none;
 }
@@ -71,17 +71,17 @@ h1, h2, h3, h4, h5, h6, figure {
 
 ::-webkit-selection {
   color: #fff;
-  background: #F14E95;
+  background: #944f5b;
 }
 
 ::-moz-selection {
   color: #fff;
-  background: #F14E95;
+  background: #944f5b;
 }
 
 ::selection {
   color: #fff;
-  background: #F14E95;
+  background: #944f5b;
 }
 
 .tebw-nav {
@@ -104,6 +104,11 @@ h1, h2, h3, h4, h5, h6, figure {
   padding: 0;
   line-height: 40px;
   font-family: "Sacramento", Arial, serif;
+}
+@media screen and (max-width: 768px) {
+  .tebw-nav #tebw-logo {
+    font-size: 20px;
+  }
 }
 .tebw-nav a {
   padding: 5px 10px;
@@ -196,7 +201,7 @@ h1, h2, h3, h4, h5, h6, figure {
   color: #fff;
 }
 .tebw-nav ul li.btn-cta a {
-  color: #F14E95;
+  color: #944f5b;
 }
 .tebw-nav ul li.btn-cta a span {
   background: #fff;
@@ -415,6 +420,7 @@ h1, h2, h3, h4, h5, h6, figure {
 @media screen and (max-width: 768px) {
   #tebw-counter .event-wrap,
   #tebw-event .event-wrap {
+    padding: 10px;
     margin-bottom: 10px;
   }
 }
@@ -744,6 +750,15 @@ h1, h2, h3, h4, h5, h6, figure {
   height: 500px;
   position: relative;
 }
+
+.map-box {
+  height:480px;
+}
+
+.map-box iframe {
+  border: none;
+}
+
 @media screen and (max-width: 768px) {
   #map {
     height: 200px;
@@ -768,7 +783,7 @@ h1, h2, h3, h4, h5, h6, figure {
   display: inline-block;
   zoom: 1;
   *display: inline;
-  color: #F14E95;
+  color: #944f5b;
   padding-left: 10px;
   padding-right: 10px;
 }
@@ -787,7 +802,7 @@ h1, h2, h3, h4, h5, h6, figure {
   position: relative;
 }
 .tebw-contact-info ul li:before {
-  color: #F14E95;
+  color: #944f5b;
   position: absolute;
   left: 0;
   top: .05em;
@@ -879,7 +894,7 @@ form label {
 .tebw-cover .display-tc .btn {
   padding: 15px 20px;
   background: #fff !important;
-  color: #F14E95;
+  color: #944f5b;
   border: none !important;
   font-size: 14px;
   text-transform: uppercase;
@@ -942,7 +957,7 @@ form label {
   display: inline-block;
   width: 100px;
   height: 100px;
-  background: rgba(241, 78, 149, 0.8);
+  background: #944f5b;
   margin: 0 4px;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
@@ -993,7 +1008,6 @@ form label {
 #tebw-testimonial,
 #tebw-services,
 #tebw-started,
-#tebw-footer,
 #tebw-event,
 #tebw-couple-story,
 #tebw-couple,
@@ -1002,6 +1016,12 @@ form label {
   padding: 7em 0;
   clear: both;
 }
+
+#tebw-footer {
+  padding: 4em 0;
+  clear: both;
+}
+
 @media screen and (max-width: 768px) {
   #tebw-testimonial,
   #tebw-services,
@@ -1043,7 +1063,7 @@ form label {
   font-size: 20px;
   background: #fff;
   padding: 20px;
-  color: #F14E95;
+  color: #944f5b;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
@@ -1066,7 +1086,7 @@ form label {
 }
 .couple-half h3 {
   font-family: "Sacramento", Arial, serif;
-  color: #F14E95;
+  color: #944f5b;
   font-size: 30px;
 }
 .couple-half .groom, .couple-half .bride {
@@ -1159,7 +1179,7 @@ form label {
   height: 90px;
   font-size: 40px;
   line-height: 40px;
-  color: #F14E95;
+  color: #944f5b;
 }
 .feature-center p, .feature-center h3 {
   margin-bottom: 30px;
@@ -1173,6 +1193,11 @@ form label {
 .tebw-heading {
   margin-bottom: 5em;
 }
+@media screen and (max-width: 768px) {
+  .tebw-heading {
+    margin-bottom: 1em;
+  }
+}
 .tebw-heading.tebw-heading-sm {
   margin-bottom: 2em;
 }
@@ -1181,7 +1206,7 @@ form label {
   margin-bottom: 10px;
   line-height: 1.5;
   font-weight: bold;
-  color: #F14E95;
+  color: #944f5b;
   font-family: "Sacramento", Arial, serif;
 }
 @media screen and (max-width: 768px) {
@@ -1216,7 +1241,7 @@ form label {
   display: block;
 }
 #tebw-testimonial .wrap-testimony .testimony-slide span a.twitter {
-  color: #F14E95;
+  color: #944f5b;
   font-weight: 300;
 }
 #tebw-testimonial .wrap-testimony .testimony-slide figure {
@@ -1308,7 +1333,7 @@ form label {
   display: table-cell;
   vertical-align: middle;
   font-size: 30px;
-  color: #F14E95;
+  color: #944f5b;
 }
 .feature-left .feature-copy {
   float: left;
@@ -1374,7 +1399,7 @@ form label {
 #tebw-started .btn {
   height: 54px;
   border: none !important;
-  background: #F14E95;
+  background: #944f5b;
   color: #fff;
   font-size: 16px;
   text-transform: uppercase;
@@ -1418,7 +1443,7 @@ form label {
 }
 .owl-carousel .owl-controls .owl-dot.active span {
   background: transparent;
-  border: 2px solid #F14E95;
+  border: 2px solid #944f5b;
 }
 
 #tebw-offcanvas {
@@ -1671,9 +1696,9 @@ form label {
 }
 
 .btn-primary {
-  background: #F14E95;
+  background: #944f5b;
   color: #fff;
-  border: 2px solid #F14E95;
+  border: 2px solid #944f5b;
 }
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active {
   background: #f366a3 !important;
@@ -1681,11 +1706,11 @@ form label {
 }
 .btn-primary.btn-outline {
   background: transparent;
-  color: #F14E95;
-  border: 2px solid #F14E95;
+  color: #944f5b;
+  border: 2px solid #944f5b;
 }
 .btn-primary.btn-outline:hover, .btn-primary.btn-outline:focus, .btn-primary.btn-outline:active {
-  background: #F14E95;
+  background: #944f5b;
   color: #fff;
 }
 
@@ -1815,7 +1840,7 @@ form label {
 .form-control:active, .form-control:focus {
   outline: none;
   box-shadow: none;
-  border-color: #F14E95;
+  border-color: #944f5b;
 }
 
 .row-pb-md {

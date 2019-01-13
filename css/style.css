@@ -752,7 +752,7 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 
 .map-box {
-  height:480px;
+  height: 540px;
 }
 
 .map-box iframe {
@@ -1339,6 +1339,12 @@ form label {
   float: left;
   width: 80%;
 }
+
+.feature-left .feature-copy p {
+  font-size: 14px;
+}
+
+
 @media screen and (max-width: 768px) {
   .feature-left .feature-copy {
     width: 70%;
@@ -1864,5 +1870,14 @@ form label {
 .js .animate-box {
   opacity: 0;
 }
+
+#invt-id-btn {
+
+}
+
+.invitees .checkbox {
+  position: relative !important;
+}
+
 
 /*# sourceMappingURL=style.css.map */

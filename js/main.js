@@ -18,6 +18,43 @@
 
 	};
 
+	var invitations = {
+		'123asd': ['Mônica', 'Fernando', 'Valentina', 'Bernardo'],
+		'234sdf': ['Duarte', 'Sinara', 'Kamila', 'Gustavo']
+	}
+
+	var add_invitee = function(n, invitee) {
+
+		var html = `
+		<div class="row checkbox">
+			<label for="invitee_n">
+				<span>{name}</span>
+			</label>
+			<input type="checkbox" id="invitee_n" class="checkbox pull-right" checked="checked"/>
+		</div>
+		`;
+
+		html = html.replace(/invitee_n/g, 'invitee_' + n.toString());
+		html = html.replace('{name}', invitee);
+
+		$('.form-group.invitees').append(html)
+	}
+
+	var invitationValidator = function() {
+
+		$('#invt-id-btn').click(function (e) {
+			var invt_id = $('#invt-id').val()
+
+			if (invt_id in invitations) {
+				var c = 1
+				for (var el in invitations[invt_id]){
+					add_invitee(c, invitations[invt_id][el])
+					c++;
+				}
+			}
+		})
+	}
+
 
 	var offcanvasMenu = function() {
 
@@ -226,6 +263,7 @@
 		loaderPage();
 		counter();
 		counterWayPoint();
+		invitationValidator();
 	});
 
 

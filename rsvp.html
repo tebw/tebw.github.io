@@ -51,7 +51,7 @@
 				</div>
 				<div class="col-md-9 col-xs-7 text-right menu-1">
 					<ul>
-						<li><a href="index.html active">Home</a></li>
+						<li><a href="index.html">Home</a></li>
 						<li><a href="services.html">Utilidades</a></li>
 						<li><a href="gift_list.html">Presentes</a></li>
 						<li class="active"><a href="rsvp.html">RSVP</a></li>
@@ -64,47 +64,56 @@
 
 	<header id="tebw-header" class="tebw-cover tebw-cover-sm" role="banner" style="background-image:url(images/img_bg_1.jpg);">
 		<div class="overlay"></div>
-		<div class="tebw-container">
-			<div class="row">
-				<div class="col-md-8 col-md-offset-2 text-center">
-					<div class="display-t">
-						<div class="display-tc animate-box" data-animate-effect="fadeIn">
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
 	</header>
 
 	<div class="tebw-rsvp">
 		<div class="container">
-			<div class="col-md-4 col-xs-12 col-md-offset-4">
+			<div class="col-md-6 col-xs-12 col-md-offset-3">
 				<form>
+					<h2>Confirme aqui sua presença!</h2>
+
+					<p>Após informar o id recebido em seu convite, marque os convidados que comparecerão ao casamento. Caso deseja adicionar algum acompanhante, clique no botão <span class="icon-plus"/></p>
+						
 					<div class="form-group">
 						<label for="invt-id">ID do Convite</label>
 						<div class="row">
-							<div class="col-xs-8">
+							<div class="col-md-8 col-xs-6">
 								<input type="text" class="form-control" id="invt-id" placeholder="Ex: Nxl108575">
 							</div>
-							<div class="col-xs-4">
+							<div class="col-md-4 col-xs-6">
 								<button type="button" id="invt-id-btn" class="btn-default btn-block">
-									<i class="icon-check"></i>
+									Continuar
 								</button>
 							</div>
 						</div>
 					</div>
 
-					<div class="form-group invitees">
-						<h3>Convidados:</h3>	
-
+					<div class="form-group second-step">
+						<div class="invitee-list"></div>
+						<dir class="add-more-message">
+							<p>Estamos contanto com no máximo dois extras por convite. Caso tenhamos esquecido de alguém, por favor entre em contato.</p>
+						</dir>
+						<button type="button" id="add-invt-btn" class="btn-default btn-block">
+							<i class="icon-plus"></i>
+						</button>
 					</div>
 
-					<div class="form-group">
-						<label for="phone" class="sr-only">Telefone de contato (zapzap)</label>
-						<input type="phone" class="form-control" id="phone" placeholder="31 0621681055">
+					<div class="form-group second-step">
+						<label for="phone">Telefone de contato (whatsapp de preferência)</label>
+						<input type="phone" class="form-control" id="phone" placeholder="Ex: +31 0621681055">
 					</div>
 
-					<button id="invt-id-btn" class="btn btn-default btn-block">Enviar</button>
+					<div class="form-group second-step">
+						<label for="music-request">Deseja contribuir para o reportório do DJ?</label>
+						<input type="text" class="form-control" id="music-request" placeholder="Ex: Evidências">
+					</div>
+
+					<div class="form-group second-step">
+						<label for="food-restriction">Alguém possui restrição alimentar?</label>
+						<input type="text" class="form-control" id="food-restriction" placeholder="Ex: Fulana não come carne">
+					</div>
+
+					<button id="invt-id-btn" type="button" class="btn btn-default btn-block second-step">Enviar</button>
 				</form>
 			</div>
 		</div>

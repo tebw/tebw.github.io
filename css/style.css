@@ -1022,7 +1022,7 @@ form label {
 #tebw-couple,
 #tebw-gallery,
 .tebw-section {
-  padding: 7em 0;
+  padding: 5em 0;
   clear: both;
 }
 
@@ -1412,15 +1412,18 @@ form label {
 }
 #tebw-started .btn {
   height: 54px;
-  border: none !important;
-  background: #944f5b;
+  background: none;
   color: #fff;
   font-size: 16px;
   text-transform: uppercase;
   font-weight: 400;
-  padding-left: 50px;
-  padding-right: 50px;
+  padding: 15px 50px;
 }
+
+#tebw-started .btn:hover {
+  background: rgba(0,0,0,0.3);
+}
+
 #tebw-started .form-inline .form-group {
   width: 100% !important;
   margin-bottom: 10px;
@@ -1689,10 +1692,10 @@ form label {
   font-family: "Work Sans", Arial, sans-serif;
   font-size: 16px;
   font-weight: 400;
-  -webkit-border-radius: 30px;
-  -moz-border-radius: 30px;
-  -ms-border-radius: 30px;
-  border-radius: 30px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  border-radius: 10px;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
@@ -1880,6 +1883,33 @@ form label {
 }
 
 
+/*
+
+Blog posts
+
+*/
+
+.tebw-post {
+  margin-top: 30px;
+}
+
+.tebw-post h2 {
+  font-size: 70px;
+  text-align: center;
+  margin-bottom: 10px;
+  line-height: 1;
+  color: #944f5b;
+  font-family: "custom-cursive", Arial, serif;
+}
+
+.tebw-post h3 {
+  margin-top: 40px;
+  color: #5d5d5d;
+}
+
+.tebw-post p {
+  text-align: justify;
+}
 /*
 
 RSVP Page

@@ -742,6 +742,8 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 #tebw-gallery-list li.one-third {
   width: 32.3%;
+  -webkit-filter: sepia(80%) hue-rotate(-50deg);
+  box-shadow: inset 0px -100px 80px -25px rgba(0,0,0,0.8)
 }
 @media screen and (max-width: 768px) {
   #tebw-gallery-list li.one-third {
@@ -766,6 +768,7 @@ h1, h2, h3, h4, h5, h6, figure {
 
 .map-box iframe {
   border: none;
+  box-shadow: 0px 0px 14px rgba(0,0,0,0.4);
 }
 
 @media screen and (max-width: 768px) {

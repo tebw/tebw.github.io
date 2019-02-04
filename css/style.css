@@ -332,6 +332,7 @@ h1, h2, h3, h4, h5, h6, figure {
 @media screen and (max-width: 768px) {
   .tebw-cover {
     height: 600px;
+    background-position: center;
   }
 }
 .tebw-cover .display-t,
@@ -766,14 +767,34 @@ h1, h2, h3, h4, h5, h6, figure {
   height: 540px;
 }
 
+.map-box .map-link{
+  display: none;
+}
+
 .map-box iframe {
   border: none;
   box-shadow: 0px 0px 14px rgba(0,0,0,0.4);
 }
 
 @media screen and (max-width: 768px) {
-  #map {
-    height: 200px;
+  .map-box iframe {
+    display: none;
+  }
+  .map-items {
+    height: 800px;
+  }
+
+  .map-box {
+    height: 100px;
+    text-align: center;
+  }
+
+  .map-box .map-link {
+    display: block;
+    font-size: 28px;
+    border: none;
+    color: white;
+    background: #944f5b
   }
 }
 
@@ -1885,6 +1906,11 @@ form label {
   opacity: 0;
 }
 
+@media screen and (max-width: 768px) {
+  .js .animate-box {
+    opacity: 1;
+  }
+}
 
 /*
 

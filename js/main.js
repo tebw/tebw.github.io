@@ -150,6 +150,7 @@
 
 	var contentWayPoint = function() {
 		var i = 0;
+		
 		$('.animate-box').waypoint( function( direction ) {
 
 			if( direction === 'down' && !$(this.element).hasClass('animated-fast') ) {
@@ -273,9 +274,27 @@
 			} , { offset: '90%' } );
 		}
 	};
+	var isMobile = {
+	    Android: function() {
+	        return navigator.userAgent.match(/Android/i);
+	    },
+	    iOS: function() {
+	        return navigator.userAgent.match(/iPhone|iPad|iPod/i);
+	    },
+	    Opera: function() {
+	        return navigator.userAgent.match(/Opera Mini/i);
+	    },
+	    Windows: function() {
+	        return navigator.userAgent.match(/IEMobile/i);
+	    },
+	    any: function() {
+	        return (isMobile.Android() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
+	    }
+	};
 
 	// Parallax
 	var parallax = function() {
+		if (isMobile.any()) return;
 		$(window).stellar();
 	};
 

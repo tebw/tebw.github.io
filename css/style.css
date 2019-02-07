@@ -116,7 +116,7 @@ h1, h2, h3, h4, h5, h6, figure {
 
 @media screen and (max-width: 768px) {
   .tebw-nav #tebw-logo {
-    font-size: 20px;
+    font-size: 45px;
   }
 }
 .tebw-nav a {
@@ -743,7 +743,7 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 #tebw-gallery-list li.one-third {
   width: 32.3%;
-  -webkit-filter: sepia(80%) hue-rotate(-50deg);
+  -webkit-filter: sepia(42%) hue-rotate(-35deg);
   box-shadow: inset 0px -100px 80px -25px rgba(0,0,0,0.8)
 }
 @media screen and (max-width: 768px) {
@@ -898,14 +898,14 @@ form label {
   #tebw-header .display-tc h1,
   #tebw-counter .display-tc h1,
   .tebw-cover .display-tc h1 {
-    font-size: 40px;
+    font-size: 80px;
   }
 }
 @media screen and (max-width: 480px) {
   #tebw-header .display-tc h1,
   #tebw-counter .display-tc h1,
   .tebw-cover .display-tc h1 {
-    font-size: 30px;
+    font-size: 75px;
   }
 }
 #tebw-header .display-tc h2,
@@ -1036,6 +1036,26 @@ form label {
   text-transform: uppercase;
   font-size: 12px;
   /* words */
+}
+
+@media screen and (max-width: 768px) {
+  .simply-countdown > .simply-section {
+    width: 70px;
+    height: 70px;
+  }
+  .simply-countdown > .simply-section .simply-amount {
+    font-size: 22px;
+  }
+
+  .simply-countdown > .simply-section .simply-word {
+    font-size: 8px;
+  }
+
+  }
+  .simply-countdown > .simply-section > div {
+    height: 70px;
+    width: 70px;
+  }
 }
 
 #tebw-testimonial,

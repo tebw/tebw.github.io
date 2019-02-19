@@ -76,7 +76,7 @@
 	<div class="tebw-rsvp">
 		<div class="container">
 			<div class="col-md-6 col-xs-12 col-md-offset-3">
-				<form>
+				<form id="rsvp-form">
 					<h2>Confirme aqui sua presença!</h2>
 
 					<p>Após informar o id recebido em seu convite, marque os convidados que comparecerão ao casamento. Caso deseja adicionar algum acompanhante, clique no botão <span class="icon-plus"/></p>
@@ -85,7 +85,7 @@
 						<label for="invt-id">ID do Convite</label>
 						<div class="row">
 							<div class="col-md-8 col-xs-6">
-								<input type="text" class="form-control" id="invt-id" placeholder="Ex: Nxl108575">
+								<input type="text" class="form-control" id="invt-id" name="invt_id" placeholder="Ex: Nxl108575">
 							</div>
 							<div class="col-md-4 col-xs-6">
 								<button type="button" id="invt-id-btn" class="btn-default btn-block">
@@ -107,20 +107,20 @@
 
 					<div class="form-group second-step">
 						<label for="phone">Telefone de contato (whatsapp de preferência)</label>
-						<input type="phone" class="form-control" id="phone" placeholder="Ex: +31 0621681055">
+						<input type="phone" class="form-control" id="phone" name="phone" placeholder="Ex: +31 0621681055">
 					</div>
 
 					<div class="form-group second-step">
 						<label for="music-request">Deseja contribuir para o reportório do DJ?</label>
-						<input type="text" class="form-control" id="music-request" placeholder="Ex: Evidências">
+						<input type="text" class="form-control" id="music-request" name="music_request" placeholder="Ex: Evidências">
 					</div>
 
 					<div class="form-group second-step">
 						<label for="food-restriction">Alguém possui restrição alimentar?</label>
-						<input type="text" class="form-control" id="food-restriction" placeholder="Ex: Fulana não come carne">
+						<input type="text" class="form-control" id="food-restriction" name="food_restriction" placeholder="Ex: Fulana não come carne">
 					</div>
 
-					<button id="invt-id-btn" type="button" class="btn btn-default btn-block second-step">Enviar</button>
+					<button id="invt-submit-btn" type="button" class="btn btn-default btn-block second-step">Enviar</button>
 				</form>
 			</div>
 		</div>
@@ -145,6 +145,9 @@
 		<a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
 	</div>
 	
+	<!-- Airtable integration -->
+	<script type="text/javascript" src="js/airtable.browser.js"></script>
+
 	<!-- jQuery -->
 	<script src="js/jquery.min.js"></script>
 	<!-- jQuery Easing -->
@@ -160,12 +163,16 @@
 
 	<!-- Stellar -->
 	<script src="js/jquery.stellar.min.js"></script>
+	
 	<!-- Magnific Popup -->
 	<script src="js/jquery.magnific-popup.min.js"></script>
 	<script src="js/magnific-popup-options.js"></script>
 
 	<!-- Main -->
 	<script src="js/main.js"></script>
+
+	<!-- Rsvp -->
+	<script src="js/rsvp.js"></script>
 
 	</body>
 </html>

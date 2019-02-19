@@ -17,73 +17,7 @@
 		});
 
 	};
-
-	var invitations = {
-		'123asd': ['Mônica', 'Fernando', 'Valentina', 'Bernardo'],
-		'234sdf': ['Duarte', 'Sinara', 'Kamila', 'Gustavo']
-	}
-
-	var add_invitee = function(n, invitee, is_new) {
- 		
- 		var read_only = is_new ? '' : 'readonly';
- 		
-		var html = `
-		<div class="row invitee-row ">
-			<div class="col-md-8 col-xs-7 invitee-name">
-				<input type="text" value="${invitee}" ${read_only}></input>
-			</div>
-			<div class="col-md-4 col-xs-5">
-				<div class="toggle">
-					<input type="checkbox" name="toggle" class="check-checkbox" id="invitee_${n}">
-					<label class="check-label" for="invitee_${n}">
-						<div id="background"></div>
-						<span class="face">
-							<span class="face-container">
-								<span class="eye left"></span>
-								<span class="eye right"></span>
-								<span class="mouth"></span>
-							</span>
-						</span>
-					</label>
-				</div>
-			</div>
-			
-		</div>
-		`;
-
-		$('form .invitee-list').append(html)
-	}
-
-	var invitationValidator = function() {
-		var added = false;
-		var invt_limit = 2;
-		var invt_count = 1;
-		$('#invt-id-btn').click(function(e) {
-			var invt_id = $('#invt-id').val()
-			if (invt_id in invitations && !added) {
-				
-				$('.tebw-rsvp .second-step').show()
-
-				for (var el in invitations[invt_id]){
-					add_invitee(invt_count, invitations[invt_id][el], false)
-					invt_count++;
-				}
-
-				added = true;
-				invt_limit = invt_count + 2;
-			}
-		})
-
-		$('#add-invt-btn').click(function(e) {
-			if (invt_count < invt_limit) {
-				add_invitee(invt_count, '', true)
-				invt_count++;
-			}else {
-				$('.add-more-message').show();
-			}
-		})
-	}
-
+	
 
 	var offcanvasMenu = function() {
 
@@ -311,8 +245,14 @@
 		loaderPage();
 		counter();
 		counterWayPoint();
-		invitationValidator();
 	});
 
 
 }());
+
+
+
+	
+	
+	
+	

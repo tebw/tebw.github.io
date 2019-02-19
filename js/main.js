@@ -229,6 +229,7 @@
 
 	// Parallax
 	var parallax = function() {
+		if (isMobile.any()) return;
 		$(window).stellar({ horizontalScrolling: false });
 	};
 

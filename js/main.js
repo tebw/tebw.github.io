@@ -84,7 +84,8 @@
 
 	var contentWayPoint = function() {
 		var i = 0;
-		
+		if (isMobile.any()) return;
+
 		$('.animate-box').waypoint( function( direction ) {
 
 			if( direction === 'down' && !$(this.element).hasClass('animated-fast') ) {
@@ -228,8 +229,7 @@
 
 	// Parallax
 	var parallax = function() {
-		if (isMobile.any()) return;
-		$(window).stellar();
+		$(window).stellar({ horizontalScrolling: false });
 	};
 
 	

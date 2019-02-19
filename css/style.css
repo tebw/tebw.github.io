@@ -743,6 +743,10 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 #tebw-gallery-list li.one-third {
   width: 32.3%;
+
+}
+
+#tebw-gallery-list li.postcards {
   -webkit-filter: sepia(42%) hue-rotate(-35deg);
   box-shadow: inset 0px -100px 80px -25px rgba(0,0,0,0.8)
 }
@@ -781,7 +785,7 @@ h1, h2, h3, h4, h5, h6, figure {
     display: none;
   }
   .map-items {
-    height: 800px;
+    height: 860px;
   }
 
   .map-box {

@@ -745,7 +745,7 @@ h1, h2, h3, h4, h5, h6, figure {
   width: 32.3%;
   background-repeat: no-repeat !important;
   background-position: center;
-  background-size: auto 100%: 
+  background-size: auto 100% !important;
 }
 
 #tebw-gallery-list li.postcards {

@@ -743,7 +743,7 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 #tebw-gallery-list li.one-third {
   width: 32.3%;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat !important;
   background-position: center;
   background-size: auto 100%: 
 }

@@ -667,6 +667,10 @@ h1, h2, h3, h4, h5, h6, figure {
   padding: 0;
   margin: 0 0 10px 1%;
   list-style: none;
+  min-height: 400px;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
   float: left;
   clear: left;
   position: relative;
@@ -681,6 +685,7 @@ h1, h2, h3, h4, h5, h6, figure {
   }
 }
 #tebw-gallery-list li a {
+  min-height: 400px;
   padding: 2em;
   position: relative;
   width: 100%;
@@ -701,6 +706,7 @@ h1, h2, h3, h4, h5, h6, figure {
   -moz-border-radius: 7px;
   -ms-border-radius: 7px;
   border-radius: 7px;
+  background: rgba(0, 0, 0, 0.2);
 }
 #tebw-gallery-list li a:hover:before {
   background: rgba(0, 0, 0, 0.5);
@@ -737,27 +743,15 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 #tebw-gallery-list li.one-third {
   width: 32.3%;
-  text-align: center;
 }
 
-#tebw-gallery-list li.one-third img {
-  width: 100%;
-  margin: auto;
-  z-index: -10;
-}
 #tebw-gallery-list li.postcards {
   -webkit-filter: sepia(42%) hue-rotate(-35deg);
   box-shadow: inset 0px -100px 80px -25px rgba(0,0,0,0.8)
 }
 @media screen and (max-width: 768px) {
   #tebw-gallery-list li.one-third {
-    width: 100%;
-  }
-
-  #tebw-gallery-list li.one-third img {
-    width: 100%;
-    margin: auto;
-    z-index: -10;
+    width: 49%;
   }
 }
 @media screen and (max-width: 480px) {

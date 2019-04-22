@@ -8,8 +8,6 @@
  		
  		var read_only = is_new ? '' : 'readonly';
  		
- 		var prechecked = is_new ? 'checked' : '';
-
 		var html = `
 		<div class="row invitee-row ">
 			<div class="col-md-8 col-xs-7 invitee-name">
@@ -17,7 +15,7 @@
 			</div>
 			<div class="col-md-4 col-xs-5">
 				<div class="toggle">
-					<input type="checkbox" name="invitee_${n}" class="check-checkbox" ${prechecked} id="invitee_${n}">
+					<input type="checkbox" name="invitee_${n}" class="check-checkbox" checked id="invitee_${n}">
 					<label class="check-label" for="invitee_${n}">
 						<div id="background"></div>
 						<span class="face">

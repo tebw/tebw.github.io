@@ -647,7 +647,7 @@ h1, h2, h3, h4, h5, h6, figure {
     right: auto;
   }
 }
-#tebw-gallery-list {
+.tebw-gallery-list {
   flex-wrap: wrap;
   -webkit-flex-wrap: wrap;
   -moz-flex-wrap: wrap;
@@ -662,12 +662,12 @@ h1, h2, h3, h4, h5, h6, figure {
   margin: 0;
   width: 100%;
 }
-#tebw-gallery-list li {
+.tebw-gallery-list li {
   display: block;
   padding: 0;
   margin: 0 0 10px 1%;
   list-style: none;
-  min-height: 400px;
+  min-height: 300px;
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -680,18 +680,19 @@ h1, h2, h3, h4, h5, h6, figure {
   border-radius: 7px;
 }
 @media screen and (max-width: 480px) {
-  #tebw-gallery-list li {
+  .tebw-gallery-list li {
     margin-left: 0;
   }
 }
-#tebw-gallery-list li a {
+
+.tebw-gallery-list li a {
   min-height: 400px;
   padding: 2em;
   position: relative;
   width: 100%;
   display: block;
 }
-#tebw-gallery-list li a:before {
+.tebw-gallery-list li a:before {
   position: absolute;
   top: 0;
   left: 0;
@@ -708,10 +709,10 @@ h1, h2, h3, h4, h5, h6, figure {
   border-radius: 7px;
   background: rgba(0, 0, 0, 0.2);
 }
-#tebw-gallery-list li a:hover:before {
+.tebw-gallery-list li a:hover:before {
   background: rgba(0, 0, 0, 0.5);
 }
-#tebw-gallery-list li a .case-studies-summary {
+.tebw-gallery-list li a .case-studies-summary {
   width: auto;
   bottom: 2em;
   left: 2em;
@@ -720,42 +721,107 @@ h1, h2, h3, h4, h5, h6, figure {
   z-index: 100;
 }
 @media screen and (max-width: 768px) {
-  #tebw-gallery-list li a .case-studies-summary {
+  .tebw-gallery-list li a .case-studies-summary {
     bottom: 1em;
     left: 1em;
     right: 1em;
   }
 }
-#tebw-gallery-list li a .case-studies-summary span {
+.tebw-gallery-list li a .case-studies-summary span {
   text-transform: uppercase;
   letter-spacing: 2px;
   font-size: 13px;
   color: rgba(255, 255, 255, 0.7);
 }
-#tebw-gallery-list li a .case-studies-summary h2 {
+.tebw-gallery-list li a .case-studies-summary h2 {
   color: #fff;
   margin-bottom: 0;
 }
 @media screen and (max-width: 768px) {
-  #tebw-gallery-list li a .case-studies-summary h2 {
+  .tebw-gallery-list li a .case-studies-summary h2 {
     font-size: 20px;
   }
 }
-#tebw-gallery-list li.one-third {
+.tebw-gallery-list li.one-third {
   width: 32.3%;
 }
 
-#tebw-gallery-list li.postcards {
-  -webkit-filter: sepia(42%) hue-rotate(-35deg);
+
+
+
+.tebw-gallery-list li button {
+  height: 300px;
+  background: none;
+  padding: 2em;
+  position: relative;
+  width: 100%;
+  display: block;
+}
+.tebw-gallery-list li button:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  content: "";
+  z-index: 80;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  -ms-border-radius: 7px;
+  border-radius: 7px;
+  background: rgba(0, 0, 0, 0.2);
+}
+.tebw-gallery-list li button:hover:before {
+  background: rgba(0, 0, 0, 0.5);
+}
+.tebw-gallery-list li button .gift-card-content {
+  width: auto;
+  bottom: 2em;
+  left: 2em;
+  right: 2em;
+  position: absolute;
+  z-index: 100;
+}
+@media screen and (max-width: 768px) {
+  .tebw-gallery-list li button .gift-card-content {
+    bottom: 1em;
+    left: 1em;
+    right: 1em;
+  }
+}
+
+
+.tebw-gallery-list li button .gift-card-content span {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.7);
+}
+.tebw-gallery-list li button .gift-card-content h2 {
+  color: #fff;
+  margin-bottom: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .tebw-gallery-list li button .gift-card-content h2 {
+    font-size: 20px;
+  }
+}
+
+.tebw-gallery-list li.postcards {
+  -webkit-filter: sepia(15%) hue-rotate(-15deg);
   box-shadow: inset 0px -100px 80px -25px rgba(0,0,0,0.8)
 }
 @media screen and (max-width: 768px) {
-  #tebw-gallery-list li.one-third {
+  .tebw-gallery-list li.one-third {
     width: 49%;
   }
 }
 @media screen and (max-width: 480px) {
-  #tebw-gallery-list li.one-third {
+  .tebw-gallery-list li.one-third {
     width: 100%;
   }
 }
